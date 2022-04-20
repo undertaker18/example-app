@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&display=swap');
 
 :root {
-    --brand: #00B4D8;
-    --dark: #092032;
-    --body: #516171;
+    --brand: #955F26;
+    --dark: #002456;
+    --body: #ffffff;
     --border: rgba(0,0,0,0.08);
     --shadow: 0px 6px 30px rgba(0, 0, 0, 0.08);
     
@@ -21,6 +21,10 @@ h1,h2,h3,h4,h5,h6,
     color: var(--dark);
 }
 
+.mission_vision{
+    font-weight: 700;
+    color: var(--brand);
+}
 .bg-cover {
     background-size: cover;
     background-position: center;
@@ -86,7 +90,11 @@ section {
 .owl-dot.active span{
     background-color: var(--brand) !important;
 }
-
+ /* logo */
+ .image_logo {
+     height: 60px;
+     width: 250px;
+ }
 
  /* slide */
  .slide {
@@ -98,14 +106,20 @@ section {
 }
 
 .slide1 {
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/bg_banner2.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.492), rgba(0, 0, 0, 0.722)), url(../img/bg_banner1.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .slide2 {
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/bg_banner1.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.492), rgba(0, 0, 0, 0.722)), url(../img/bg_banner2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.slide3 {
+    background: linear-gradient(rgba(0, 0, 0, 0.492), rgba(0, 0, 0, 0.722)), url(../img/bg_banner3.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -188,8 +202,8 @@ section {
 }
 
 .btn-brand:hover {
-    background-color: #d64022;
-    border-color: #d64022;
+    background-color: #002456;
+    border-color: #002456;
     color: #fff;
 }
 
@@ -197,7 +211,7 @@ section {
 text-align: center;}
 
 .intro p {
-    max-width: 500px;
+    max-width: 900px;
 }
 .intro h6{
     color: var(--brand);
@@ -221,7 +235,7 @@ text-align: center;}
 
 
 #milestone {
-    background: linear-gradient(rgba(30, 139, 195, 0.85), rgba(40, 130, 201, 0.85)), url(../img/bg_banner1.jpg);
+    background: linear-gradient(rgba(105, 83, 10, 0.486), rgba(54, 49, 4, 0.85)), url(../img/bg_banner1.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -339,14 +353,29 @@ text-align: center;}
     top: 0%;
     opacity: 1;
 }
+#about {
 
-#reviews {
-
-    background: linear-gradient(-90deg, rgba(8, 32, 50, 0.8), rgba(8, 32, 50, 0.8)), url(../img/bg_banner1.jpg), #082032;;
+    background: linear-gradient(-90deg, rgba(15, 67, 106, 0.894), rgba(8, 32, 50, 0.8)), url(../img/about-bg.jpg), #366080;;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
+
+.about img {
+    width: 80px !important;
+    height: 80px;
+    border-radius: 100px;
+    margin: auto;
+}
+
+#reviews {
+
+    background: linear-gradient(-90deg, rgba(15, 67, 106, 0.894), rgba(8, 32, 50, 0.8)), url(../img/bg_banner1.jpg), #082032;;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 
 .review {
     text-align: center;
@@ -490,3 +519,5 @@ input.form-control {
     box-shadow: none;
     border-color: var(--brand);
 }
+
+/*chat */
